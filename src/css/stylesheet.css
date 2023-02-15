@@ -1,0 +1,781 @@
+@font-face {
+	font-family: "Nexa";
+	src: url("../fonts/Nexa Regular.otf");
+}
+
+@font-face {
+	font-family: "Nexa Light";
+	src: url("../fonts/Nexa Light.otf");
+}
+
+@font-face {
+	font-family: "Nexa Heavy";
+	src: url("../fonts/Nexa Heavy.ttf");
+}
+
+@font-face {
+	font-family: "Nexa Book";
+	src: url("../fonts/Nexa Book.ttf");
+}
+
+@font-face {
+	font-family: "Nexa Bold";
+	src: url("../fonts/Nexa Bold.otf");
+}
+
+:root {
+	--mobile: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Nexa";
+	overflow-x: hidden;
+	color: white;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+footer {
+	background: #354860;
+	height: calc(30vh + 1px);
+	width: 100vw;
+}
+
+.splash {
+	height: 100vh;
+	width: 100vw;
+	background: url(../images/background.jpg);
+	background-size: cover;
+}
+
+.splashBox {
+	margin: 0 20vw;
+	height: 100vh;
+	width: 60vw;
+}
+
+.topBar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 10vh;
+	width: 60vw;
+}
+
+.logo {
+	height: 8vh;
+	width: 14vh;
+}
+
+.burger {
+	cursor: pointer;
+	height: 5vh;
+	width: 5vh;
+}
+
+.splashContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 20vh 0;
+	height: 40vh;
+	width: 60vw;
+}
+
+.splashHead {
+	height: auto;
+	width: 60vw;
+	font-family: "Nexa Heavy";
+	font-size: 86px;
+	line-height: 1;
+	margin: 0;
+}
+
+.splashText {
+	height: auto;
+	width: 60vw;
+	font-family: "Nexa Book";
+	font-size: 24px;
+	margin: 2vh 0 8vh;
+}
+
+.scrollContain {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10vh;
+	width: 60vw;
+}
+
+.scroll {
+	height: 50px;
+	width: 50px;
+	transition: filter 0.5s;
+}
+
+.scroll:hover {
+	filter: opacity(0.5);
+}
+
+.contentBar {
+	background-color: #354860;
+	height: auto;
+	width: 100vw;
+}
+
+.contentText {
+	font-family: "Nexa Book";
+	font-size: 28px;
+	text-align: center;
+	margin: 0 20vw;
+	padding: 10vh 0;
+	height: auto;
+	width: 60vw;
+}
+
+.textImageSection {
+	height: 100vh;
+	width: 100vw;
+}
+
+.contentPage {
+	height: auto;
+	width: 100vw;
+}
+
+.doubleRow {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rowImage {
+	height: 50vh;
+	width: 50vw;
+}
+
+.rowFI {
+	background: url(../images/image1.jpg);
+	background-size: cover;
+}
+
+.rowSI {
+	background: url(../images/image2.jpg);
+	background-size: cover;
+}
+
+.rowText {
+	font-family: "Nexa Book";
+	font-size: 32px;
+	margin: 0 5vw;
+	max-height: 50vh;
+	height: auto;
+	width: 40vw;
+	color: #BC9376;
+}
+
+.contentContain {
+	background: #354860;
+	height: 40vh;
+	width: 100vw;
+}
+
+.imageContain {
+	background: url(../images/image3.jpg);
+	background-size: cover;
+	background-position: center;
+	-webkit-mask-image: linear-gradient(transparent, black, black);
+	mask-image: linear-gradient(transparent, black, black);
+	height: 40vh;
+	width: 100vw;
+}
+
+.autoCarousel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	-webkit-mask-image: linear-gradient(black, black, transparent);
+	mask-image: linear-gradient(black, black, transparent);
+	height: 20vh;
+	width: 100vw;
+}
+
+.bottomBar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 20vh;
+	width: 100vw;
+}
+
+.carouselButton {
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: solid;
+	border-color: #354860;
+	border-width: 2px;
+	border-radius: 5px;
+	height: auto;
+	width: auto;
+}
+
+/* .pusher {
+	pointer-events: none;
+	background: transparent;
+	height: 1px;
+	width: 1vw;
+	animation: infscroll 20s linear infinite;
+} */
+
+.autoScroll {
+	animation: infscroll 20s linear infinite;
+	position: relative;
+}
+
+.carouselText {
+	pointer-events: none;
+	font-family: "Nexa Book";
+	font-size: 24px;
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;
+	height: auto;
+	width: 50vw;
+}
+
+.buttonText {
+	font-family: "Nexa Book";
+	font-size: 24px;
+	margin: 0;
+	padding: 1vh 1vw;
+}
+
+.testimonial {
+	height: auto;
+	width: 60vw;
+	margin: 5vh 20vw 9vh;
+}
+
+.subBar {
+	height: 10vh;
+	width: 60vw;
+	padding: 3vh 0;
+}
+
+.subTitle {
+	font-family: "Nexa Heavy";
+	font-size: 42px;
+	text-align: center;
+	color: #33363A;
+	margin: 0;
+}
+
+.subSubTitle {
+	font-family: "Nexa Book";
+	font-size: 18px;
+	text-align: center;
+	color: #33363A;
+	margin: 0;
+}
+
+.testimonials {
+	height: auto;
+	width: 60vw;
+}
+
+.cslider {
+	height: auto;
+	width: 60vw;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 2vh;
+	width: 60vw;
+}
+
+.csliderTop {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 7.5vh;
+	width: 60vw;
+}
+
+.clientPhoto {
+	background: url("../images/client1.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 7.5vh;
+	width: 7.5vh;
+	border-radius: 100%;
+	margin: 0 5px;
+}
+
+.clientName {
+	font-family: "Nexa Light";
+	font-size: 18px;
+	color: #33363A;
+	margin: 0 5px;
+}
+
+.csliderText {
+	height: auto;
+	width: 60vw;
+}
+
+.clientQuote {
+	font-family: "Nexa Light";
+	font-size: 18px;
+	text-align: center;
+	color: #33363A;
+	height: auto;
+	width: 60vw;
+	margin: 0;
+	padding: 1vh 0;
+}
+
+.sliderButton {
+	background: white;
+	height: 1vh;
+	width: 1vh;
+	margin: 0 5px;
+	border: solid 1px;
+	border-color: gray;
+	border-radius: 100%;
+	transition: background 0.5s;
+}
+
+.sliderButton:hover {
+	background: gray;
+}
+
+.infoImage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60vh;
+	width: 100vw;
+}
+
+.textsec {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #354860;
+	height: 60vh;
+	width: 50vw;
+}
+
+.imgsec {
+	background: url(../images/image4.jpg);
+	background-size: cover;
+	height: 60vh;
+	width: 50vw;
+}
+
+.textsectext {
+	font-family: "Nexa Book";
+	font-size: 28px;
+	color: white;
+	margin: 0;
+	padding: 0 50px;
+}
+
+.white {
+	background: white;
+}
+
+.notwhite {
+	color: #33363A;
+}
+
+.FOSNotice {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 22.5vh;
+	width: 50vw;
+}
+
+.links {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 22.5vh;
+	width: 50vw;
+}
+
+.topFooter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 22.5vh;
+	width: 100vw;
+}
+
+.line {
+	height: 1px;
+	width: 100vw;
+	background: #4D6582;
+}
+
+.notice {
+	font-family: "Nexa Light";
+	font-size: 14px;
+	color: white;
+	margin: 0 20vw 0 1vw;
+	;
+}
+
+.footerSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	height: 22.5vh;
+	width: 10vw;
+}
+
+.footerTitle {
+	font-family: "Nexa Book";
+	font-size: 24px;
+	color: white;
+	margin: 3vh 0 1vh 0;
+}
+
+.footerLink {
+	cursor: pointer;
+	font-family: "Nexa Light";
+	font-size: 14px;
+	color: white;
+	margin: 0 0 0.5vh 0;
+}
+
+.bottomFooter {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 7.5vh;
+	width: 100vw;
+}
+
+.socials {
+	margin: 0 4vh 0 3vh;
+}
+
+.socialIcon {
+	cursor: pointer;
+	transform: scale(0.8);
+}
+
+.menu {
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	position: fixed;
+	left: 100vw;
+	background: #354860;
+	box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
+	height: 100vh;
+	width: 0vw;
+	z-index: 9999999999999;
+}
+
+.menuOption {
+	cursor: pointer;
+	font-size: 42px;
+	color: white;
+	width: 28vw;
+	text-align: right;
+	margin-right: 2vw;
+}
+
+.close {
+	cursor: pointer;
+	height: 64px;
+	width: 64px;
+}
+
+.newspaperText {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 60vw;
+	margin: 75px 20vw 0;
+}
+
+.leftPara {
+	width: 25vw;
+}
+
+.rightPara {
+	width: 25vw;
+}
+
+.para {
+	display: inline;
+	margin: 0;
+	line-height: 0;
+	font-family: "Nexa Light";
+	font-size: 18px;
+	color: #33363A;
+}
+
+.paraB {
+	display: inline;
+	margin: 0;
+	line-height: 0;
+	font-family: "Nexa Heavy";
+	font-size: 42px;
+	color: #33363A;
+}
+
+@media screen and (max-width: 480px) {
+	
+	:root {
+		--mobile: 1;
+	}
+	
+	.splashBox {
+		margin: 0 5vw;
+		width: 90vw;
+	}
+
+	.topBar {
+		width: 90vw;
+	}
+
+	.splashContent {
+		width: 90vw;
+	}
+
+	.splashHead {
+		font-size: 64px;
+		width: 90vw;
+	}
+
+	.splashText {
+		width: 90vw;
+	}
+
+	.scrollContain {
+		width: 90vw;
+	}
+
+	.doubleRow {
+		flex-direction: column;
+	}
+
+	.rowImage {
+		height: 25vh;
+		width: 100vw;
+	}
+
+	.rowText {
+		font-size: 28px;
+		width: 90vw;
+		margin: 20px 5vw;
+	}
+
+	.testimonial {
+		height: auto;
+		width: 90vw;
+		margin: 20px 5vw;
+	}
+
+	.subBar {
+		height: auto;
+		width: 90vw;
+	}
+
+	.testimonials {
+		height: auto;
+		width: 90vw;
+	}
+
+	.cslider {
+		width: 90vw;
+	}
+
+	.buttons {
+		width: 90vw;
+	}
+
+	.csliderText {
+		width: 90vw;
+		height: auto;
+	}
+
+	.clientQuote {
+		width: 90vw;
+		height: auto;
+	}
+
+	.csliderTop {
+		width: 90vw;
+	}
+
+	.infoImage {
+		height: auto;
+		flex-direction: column;
+	}
+
+	.textsec {
+		height: auto;
+		width: 100vw;
+	}
+
+	.textsectext {
+		margin: 20px 0;
+	}
+
+	.imgsec {
+		height: 25vh;
+		width: 100vw;
+	}
+
+	.contentText {
+		width: 80vw;
+		margin: 0 10vw;
+		padding: 5vh 0;
+	}
+
+	footer {
+		height: auto;
+	}
+
+	.topFooter {
+		flex-direction: column-reverse;
+		height: auto;
+	}
+
+	.bottomFooter {
+		height: auto;
+	}
+
+	.notice {
+		font-size: 10px;
+		margin: 3vw;
+		;
+	}
+
+	.socials {
+		margin: 0 1vw 0 0;
+	}
+
+	.FOSNotice {
+		height: auto;
+		width: 100vw;
+	}
+
+	.links {
+		justify-content: space-around;
+		align-items: flex-start;
+		width: 100vw;
+	}
+
+	.footerSection {
+		height: auto;
+		width: auto;
+	}
+
+	.footerLink {
+		font-size: 12px;
+	}
+
+	.socialIcon {
+		transform: scale(0.6);
+	}
+
+	.copyright {
+		width: 50vw;
+	}
+
+	.menu {
+		width: 0vw;
+		left: 100vw;
+	}
+
+	.menuOption {
+		width: 85vw;
+		margin-right: 5vw;
+	}
+}
+
+.menu {
+	transition: .5s;
+}
+
+@media screen and (min-width: 480px) {
+	.carouselText {
+		width: 300px;
+	}
+	
+	.autoScroll {
+	animation: infscroll2 20s linear infinite;
+	}
+}
+
+@media screen and (min-width: 1080px) {
+	.carouselText {
+		width: 720px;
+	}
+	
+	.autoScroll {
+	animation: infscroll1 20s linear infinite;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.carouselText {
+		width: 1080px;
+	}
+	
+	.autoScroll {
+	animation: infscroll 20s linear infinite;
+	}
+}
+
+@keyframes infscroll {
+	from {
+		top: 0px;
+	}
+
+	to {
+		top: 796px;
+	}
+}
+
+@keyframes infscroll1 {
+	from {
+		top: 0%;
+	}
+
+	to {
+		top: 868px;
+	}
+}
+
+@keyframes infscroll2 {
+	from {
+		top: 0%;
+	}
+
+	to {
+		top: 1408px;
+	}
+}
