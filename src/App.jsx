@@ -124,7 +124,7 @@ function App() {
 		<div className="imgsec"></div>
 	</section>
 	<section className="contentBar white">
-		<h2 className="contentText notwhite">Where capital needs to be invested we have the Claritas Investment Process, an impeccably researched, world className investment solution based on the latest evidence and a healthy dose of common sense.</h2>
+		<h2 className="contentText notwhite">Where capital needs to be invested we have the Claritas Investment Process, an impeccably researched, world class investment solution based on the latest evidence and a healthy dose of common sense.</h2>
 	</section>
 	<footer>
 		<div className="topFooter">
