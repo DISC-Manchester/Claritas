@@ -71,12 +71,3 @@ function quoteManager(cVal) {
 		document.getElementById("4").style.background = "gray";
 	}
 }
-
-document.querySelector(".clientPhoto").style.background = "url(images/client1.jpg)";
-document.querySelector(".clientPhoto").style.backgroundSize = "cover";
-document.querySelector(".clientName").innerHTML = "Graham & Michele";
-document.querySelector(".clientQuote").innerHTML = "We were recommended Claritas by a friend who had worked with them for a number of years.  We are so glad we took that recommendation.  We get informative and impactful advice, specifically tailored to our needs and wishes, the advice is also delivered in a clear, concise, and friendly way.  It is genuinely comforting to think we have people we trust managing our finances, whilst still maintaining a level of control that allows us to carry on the lifestyle that we want.  We cannot recommend Krish and the team at Claritas highly enough and only wish we had started using them sooner.";
-document.getElementById("1").style.background = "gray";
-document.getElementById("2").style.background = "white";
-document.getElementById("3").style.background = "white";
-document.getElementById("4").style.background = "white";

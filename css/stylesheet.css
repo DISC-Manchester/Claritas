@@ -46,6 +46,10 @@ footer {
 	width: 100vw;
 }
 
+a {
+	text-decoration: none;
+}
+
 .splash {
 	height: 100vh;
 	width: 100vw;
@@ -348,6 +352,7 @@ footer {
 }
 
 .sliderButton {
+	cursor: pointer;
 	background: white;
 	height: 1vh;
 	width: 1vh;
@@ -544,12 +549,234 @@ footer {
 	color: #33363A;
 }
 
+.menu {
+	transition: .5s;
+}
+
+.pageHead {
+	background: url(../images/bloghead.jpg);
+	background-position: center center;
+	height: 50vh;
+	width: 100vw;
+}
+
+.headBox {
+	height: 50vh;
+	width: 60vw;
+	margin: 0 20vw;
+}
+
+.titleBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40vh;
+	width: 60vw;
+}
+
+.pageTitle {
+	text-align: center;
+	font-family: "Nexa Heavy";
+	font-size: 86px;
+	line-height: 1;
+}
+
+.blogMain {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	height: auto;
+	width: 60vw;
+	margin: 50px 20vw;
+}
+
+.blogMainPage {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	height: auto;
+	width: 60vw;
+	margin: 50px 20vw;
+	flex-direction: column;
+}
+
+.blogColumn {
+	height: auto;
+	width: 576px;
+}
+
+.blogItem {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	height: auto;
+	width: 576px;
+	margin-bottom: 50px;
+}
+
+.blogDate {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	height: auto;
+	width: 70px;
+	margin-right: 10px;
+}
+
+.dateText {
+	text-align: right;
+	font-family: "Nexa Heavy";
+	font-size: 24px;
+	color: black;
+	opacity: 0.5;
+	margin: 0;
+	line-height: 1;
+}
+
+.dateTextb {
+	text-align: right;
+	font-family: "Nexa Heavy";
+	font-size: 18px;
+	color: black;
+	opacity: 0.5;
+	margin: 0;
+	line-height: 1;
+}
+
+.blogBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background: rgba(0, 0, 0, 0.1);
+	height: auto;
+	width: 432px;
+	border-radius: 10px;
+}
+
+.blogImage {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	height: auto;
+	width: 432px;
+}
+
+.pageSelect {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	width: 100vw;
+}
+
+.contentBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: auto;
+	width: 432px;
+}
+
+.blogTitle {
+	font-family: "Nexa Heavy";
+	font-size: 24px;
+	color: #33363A;
+	margin: 10px 40px;
+}
+
+.blogDesc {
+	font-family: "Nexa";
+	font-size: 18px;
+	color: #33363A;
+	margin: 0 40px;
+}
+
+.blogButton {
+	font-family: "Nexa Heavy";
+	font-size: 18px;
+	color: #BC9376;
+	margin: 10px 40px;
+}
+
+.pageNumber {
+	margin: 0;
+	color: #33363A;
+}
+
+.blogText {
+	font-family: "Nexa";
+	font-size: 18px;
+	color: #33363A;
+}
+
+.teamMain {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	height: auto;
+	width: 60vw;
+	margin: 50px 20vw;
+}
+
+.staffItem {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	height: auto;
+	width: 15vw;
+	margin: 25px 2.5vw;
+}
+
+.staffPhoto {
+	border-radius: 10px;
+	width: 15vw;
+	height: auto;
+}
+
+.staffName {
+	margin: 10px 0 0 0;
+	font-size: 24px;
+	color: #33363A;
+}
+
+.staffJob {
+	font-family: "Nexa Light";
+	margin: 0;
+	font-size: 16px;
+	color: #33363A;
+}
+
+.pageNumber {
+	margin: 0 10px;
+}
+
+.box {
+	background: rgba(0, 0, 0, 0.25);
+}
+
+.breadcrumb {
+	width: 60vw;
+	display: flex;
+}
+
+.crumbText {
+	color: #BC9376;
+	font-size: 24px;
+	font-family: "Nexa Heavy";
+	margin-right: 20px;
+}
+
+.blogPostImage {
+	height: auto;
+	width: 60vw;
+}
+
 @media screen and (max-width: 480px) {
-	
 	:root {
 		--mobile: 1;
 	}
-	
+
 	.splashBox {
 		margin: 0 5vw;
 		width: 90vw;
@@ -714,19 +941,79 @@ footer {
 		width: 85vw;
 		margin-right: 5vw;
 	}
-}
-
-.menu {
-	transition: .5s;
+	
+	.blogMain {
+		width: 100vw;
+		margin: 20px 0;
+		flex-direction: column;
+	}
+	
+	.blogColumn {
+		width: 100vw;
+	}
+	
+	.headBox {
+		width: 90vw;
+		margin: 0 5vw;
+	}
+	
+	.titleBox {
+		width: 90vw;
+	}
+	
+	.blogItem {
+		width: 100vw;
+	}
+	
+	.blogDate {
+		width: 15vw;
+		margin-right: 10px;
+	}
+	
+	.blogBox {
+		width: 80vw;
+	}
+	
+	.blogImage {
+		width: 80vw;
+	}
+	
+	.contentBox {
+		width: 80vw;
+	}
+	
+	.staffItem {
+		width: 60vw;
+	}
+	
+	.staffPhoto {
+		width: 60vw;
+	}
+	
+	.leftPara {
+		width: 60vw;
+	}
+	
+	.rightPara {
+		width: 60vw;
+	}
+	
+	.newspaperText {
+		flex-direction: column;
+	}
+	
+	.pageTitle {
+		font-size: 64px;
+	}
 }
 
 @media screen and (min-width: 480px) {
 	.carouselText {
 		width: 300px;
 	}
-	
+
 	.autoScroll {
-	animation: infscroll2 20s linear infinite;
+		animation: infscroll2 20s linear infinite;
 	}
 }
 
@@ -734,9 +1021,9 @@ footer {
 	.carouselText {
 		width: 720px;
 	}
-	
+
 	.autoScroll {
-	animation: infscroll1 20s linear infinite;
+		animation: infscroll1 20s linear infinite;
 	}
 }
 
@@ -744,9 +1031,9 @@ footer {
 	.carouselText {
 		width: 1080px;
 	}
-	
+
 	.autoScroll {
-	animation: infscroll 20s linear infinite;
+		animation: infscroll 20s linear infinite;
 	}
 }
 
