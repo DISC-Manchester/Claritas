@@ -441,7 +441,7 @@ a {
 	font-family: "Nexa Light";
 	font-size: 14px;
 	color: white;
-	margin: 0 20vw 0 1vw;
+	margin: 0 20vw 0 2vw;
 	;
 }
 
@@ -772,6 +772,46 @@ a {
 	width: 60vw;
 }
 
+.contactMain {
+	height: auto;
+	width: 60vw;
+	margin: 0 20vw;
+}
+
+form {
+	height: auto;
+	width: 60vw;
+	margin: 50px 0;
+}
+
+input[type=text] {
+	border: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	height: 50px;
+	width: 24vw;
+	margin: 0 2.5vw 15px;
+}
+
+textarea {
+	border: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	height: 250px;
+	width: 53.75vw;
+	margin: 0 2.5vw 15px;
+	resize: vertical;
+}
+
+input[type=submit] {
+	border: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	margin: 0 2.5vw;
+	height: 50px;
+	width: 10vw;
+}
+
 @media screen and (max-width: 480px) {
 	:root {
 		--mobile: 1;
@@ -897,7 +937,6 @@ a {
 	.notice {
 		font-size: 10px;
 		margin: 3vw;
-		;
 	}
 
 	.socials {
