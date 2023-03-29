@@ -71,3 +71,23 @@ function quoteManager(cVal) {
 		document.getElementById("4").style.background = "gray";
 	}
 }
+
+function backgroundHandler() {
+	var time = 2;
+	var b1 = "images/background.jpg";
+	var b2 = "images/background1.jpg";
+	var b3 = "images/background2.jpg";
+	var b4 = "images/background3.jpg";
+	var b5 = "images/background4.jpg";
+	var b6 = "images/background5.jpg";
+	var interval = setInterval(function() { 
+		if (time != 7 && window.location.href.includes("index") == true) {
+			document.querySelector(".splash").style.backgroundImage = "url(" + eval("b" + time) + ")";
+			time++; 
+		} else { 
+			document.querySelector(".splash").style.backgroundImage = "url(images/background.jpg)";
+			time = 2;
+		}
+	}, 10000)
+}
+backgroundHandler();
