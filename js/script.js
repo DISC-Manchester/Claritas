@@ -82,12 +82,35 @@ function backgroundHandler() {
 	var b6 = "images/background5.jpg";
 	var interval = setInterval(function() { 
 		if (time != 7 && window.location.href.includes("index") == true) {
-			document.querySelector(".splash").style.backgroundImage = "url(" + eval("b" + time) + ")";
+			document.querySelector(".splashBack").style.backgroundImage = "url(" + eval("b" + time) + ")";
+			document.querySelector(".splashBack").classList.remove("kenburns-bottom");
+			void document.querySelector(".splashBack").offsetWidth;
+			document.querySelector(".splashBack").classList.add("kenburns-bottom");
 			time++; 
 		} else { 
-			document.querySelector(".splash").style.backgroundImage = "url(images/background.jpg)";
+			document.querySelector(".splashBack").style.backgroundImage = "url(images/background.jpg)";
+			document.querySelector(".splashBack").classList.remove("kenburns-bottom");
+			void document.querySelector(".splashBack").offsetWidth;
+			document.querySelector(".splashBack").classList.add("kenburns-bottom");
 			time = 2;
 		}
 	}, 10000)
 }
 backgroundHandler();
+
+var images = [];
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
+    }
+}
+
+preload(
+    "images/background.jpg",
+	"images/background1.jpg",
+	"images/background2.jpg",
+	"images/background3.jpg",
+	"images/background4.jpg",
+	"images/background5.jpg"
+)
