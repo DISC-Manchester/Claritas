@@ -196,7 +196,7 @@ a {
 	max-height: 50vh;
 	height: auto;
 	width: 40vw;
-	color: #BC9376;
+	color: #916646;
 }
 
 .contentContain {
@@ -313,6 +313,7 @@ a {
 }
 
 .cslider {
+	transition: opacity 0.5s;
 	height: auto;
 	width: 60vw;
 }
@@ -376,13 +377,23 @@ a {
 	width: 1vh;
 	margin: 0 5px;
 	border: solid 1px;
-	border-color: gray;
+	border-color: #6E6E6E;
 	border-radius: 100%;
 	transition: background 0.5s;
 }
 
 .sliderButton:hover {
-	background: gray;
+	background: #6E6E6E;
+}
+
+.playButton {
+	margin: 0 20px;
+	height: 2vh;
+	width: 2vh;
+}
+
+.reverse {
+	transform: rotate(180deg);
 }
 
 .infoImage {
@@ -645,8 +656,7 @@ a {
 	text-align: right;
 	font-family: "Nexa Heavy";
 	font-size: 24px;
-	color: black;
-	opacity: 0.5;
+	color: #6E6E6E;
 	margin: 0;
 	line-height: 1;
 }
@@ -655,8 +665,7 @@ a {
 	text-align: right;
 	font-family: "Nexa Heavy";
 	font-size: 18px;
-	color: black;
-	opacity: 0.5;
+	color: #6E6E6E;
 	margin: 0;
 	line-height: 1;
 }
@@ -665,7 +674,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	background: rgba(0, 0, 0, 0.1);
+	background: #F5F5F5;
 	height: auto;
 	width: 432px;
 	border-radius: 10px;
@@ -680,10 +689,11 @@ a {
 
 .pageSelect {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
 	height: 100px;
-	width: 100vw;
+	width: 60vw;
+	margin: 0 20vw;
 }
 
 .contentBox {
@@ -711,7 +721,7 @@ a {
 .blogButton {
 	font-family: "Nexa Heavy";
 	font-size: 18px;
-	color: #BC9376;
+	color: #916646;
 	margin: 10px 40px;
 }
 
@@ -779,7 +789,7 @@ a {
 }
 
 .crumbText {
-	color: #BC9376;
+	color: #916646;
 	font-size: 24px;
 	font-family: "Nexa Heavy";
 	margin-right: 20px;
@@ -818,16 +828,14 @@ a {
 
 .contactContact {
 	font-size: 14px;
-	color: black;
-	opacity: 0.5;
+	color: #6E6E6E;
 	margin: 0;
 }
 
 .contactDesc {
 	font-size: 16px;
-	color: black;
+	color: #6E6E6E;
 	text-align: center;
-	opacity: 0.5;
 	margin: 20px 0 0 0;
 	width: 200px;
 }

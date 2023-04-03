@@ -78,7 +78,6 @@
 						<h2 class="carouselText" id="question12">How would long term care costs affect me?</h2>
 						<h2 class="carouselText" id="question13">How can I plan for long term care costs?</h2>
 					</div>
-					<!-- <div class="pusher"></div> -->
 				</div>
 				<div class="bottomBar">
 					<a class="carouselButton" href="contact.html"><h2 class="buttonText">Get in touch for a chat</h2></a>
@@ -111,10 +110,12 @@
 				</div>
 			</div>
 			<div class="buttons">
+				<img class="playButton reverse" src="images/play.svg" onclick="quoteManager(5)">
 				<div class="sliderButton" id="1" onclick="quoteManager(1)"></div>
 				<div class="sliderButton" id="2" onclick="quoteManager(2)"></div>
 				<div class="sliderButton" id="3" onclick="quoteManager(3)"></div>
 				<div class="sliderButton" id="4" onclick="quoteManager(4)"></div>
+				<img class="playButton" src="images/play.svg" onclick="quoteManager(6)">
 			</div>
 		</div>
 	</section>
@@ -142,8 +143,7 @@
 				</div>
 				<div class="footerSection">
 					<h3 class="footerTitle">POLICIES</h3>
-					<h6 class="footerLink">Privacy Policy</h6>
-					<h6 class="footerLink">Terms of Service</h6>
+					<h6 class="footerLink">Accessibility</h6>
 				</div>
 				<div class="footerSection">
 					<h3 class="footerTitle">CONTACT</h3>
@@ -151,8 +151,8 @@
 					Heaten Moor,<br>
 					Stockport,<br>
 					SK4 4DT</h6>
-					<h6 class="footerLink">0161 636 9200</h6>
-					<h6 class="footerLink">hello@claritaswm.co.uk</h6>
+					<a href="tel:01616369200"><h6 class="footerLink">0161 636 9200</h6></a>
+					<a href="hello@claritaswm.co.uk"><h6 class="footerLink">hello@claritaswm.co.uk</h6></a>
 				</div>
 			</div>
 		</div>
@@ -173,7 +173,7 @@
 		document.querySelector(".clientPhoto").style.background = "url(images/client1.jpg)";
 		document.querySelector(".clientPhoto").style.backgroundSize = "cover";
 		document.querySelector(".clientName").innerHTML = "Graham & Michele";
-		document.querySelector(".clientQuote").innerHTML = "We were recommended Claritas by a friend who had worked with them for a number of years.  We are so glad we took that recommendation.  We get informative and impactful advice, specifically tailored to our needs and wishes, the advice is also delivered in a clear, concise, and friendly way.  It is genuinely comforting to think we have people we trust managing our finances, whilst still maintaining a level of control that allows us to carry on the lifestyle that we want.  We cannot recommend Krish and the team at Claritas highly enough and only wish we had started using them sooner.";
+		document.querySelector(".clientQuote").innerHTML = "We were recommended Claritas by a friend who had worked with them for a number of years.  We are so glad we took that recommendation.  We get informative and impactful advice, specifically tailored to our needs and wishes, the advice is also delivered in a clear, concise, and friendly way.<br><br>It is genuinely comforting to think we have people we trust managing our finances, whilst still maintaining a level of control that allows us to carry on the lifestyle that we want.<br><br>We cannot recommend Krish and the team at Claritas highly enough and only wish we had started using them sooner.";
 		document.getElementById("1").style.background = "gray";
 		document.getElementById("2").style.background = "white";
 		document.getElementById("3").style.background = "white";
