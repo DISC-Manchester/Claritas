@@ -85,8 +85,8 @@ a {
 }
 
 .logo {
-	height: 8vh;
-	width: 14vh;
+	height: 10vh;
+	width: 17.5vh;
 }
 
 .burger {
@@ -180,18 +180,19 @@ a {
 }
 
 .rowFI {
-	background: url(../images/image1.jpg);
+	background: url(../images/background5.jpg);
+	background-position: center;
 	background-size: cover;
 }
 
 .rowSI {
-	background: url(../images/image2.jpg);
+	background: url(../images/background2.jpg);
 	background-size: cover;
 }
 
 .rowText {
 	font-family: "Nexa Book";
-	font-size: 32px;
+	font-size: 28px;
 	margin: 0 5vw;
 	max-height: 50vh;
 	height: auto;
@@ -201,7 +202,7 @@ a {
 
 .contentContain {
 	background: #354860;
-	height: 40vh;
+	height: 70vh;
 	width: 100vw;
 }
 
@@ -211,7 +212,7 @@ a {
 	background-position: center;
 	-webkit-mask-image: linear-gradient(transparent, black, black);
 	mask-image: linear-gradient(transparent, black, black);
-	height: 40vh;
+	height: 70vh;
 	width: 100vw;
 }
 
@@ -224,7 +225,7 @@ a {
 	overflow-y: hidden;
 	-webkit-mask-image: linear-gradient(black, black, transparent);
 	mask-image: linear-gradient(black, black, transparent);
-	height: 20vh;
+	height: 50vh;
 	width: 100vw;
 }
 
@@ -481,6 +482,7 @@ a {
 	align-items: flex-start;
 	height: 22.5vh;
 	width: 10vw;
+	margin-right: 1vw;
 }
 
 .footerTitle {
@@ -507,7 +509,7 @@ a {
 }
 
 .socials {
-	margin: 0 4vh 25px 3vh;
+	margin: 0 5vh 0 3vh;
 }
 
 .socialIcon {
@@ -973,7 +975,7 @@ a {
 
 	.notice {
 		font-size: 10px;
-		margin: 3vw;
+		margin: 5vw 3vw;
 	}
 
 	.socials {
@@ -1127,31 +1129,31 @@ a {
 
 @keyframes infscroll {
 	from {
-		top: 0px;
+		top: 796px;
 	}
 
 	to {
-		top: 796px;
+		top: 0px;
 	}
 }
 
 @keyframes infscroll1 {
 	from {
-		top: 0%;
+		top: 868px;
 	}
 
 	to {
-		top: 868px;
+		top: 0px;
 	}
 }
 
 @keyframes infscroll2 {
 	from {
-		top: 0%;
+		top: 1408px;
 	}
 
 	to {
-		top: 1408px;
+		top: 0px;
 	}
 }
 
