@@ -1,0 +1,36 @@
+on: push
+
+jobs:
+  cd-dev:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Deploy to Netlify
+        uses: South-Paw/action-netlify-deploy@v1.2.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID_DEV }}
+          build-dir: "."
+
+  cd-prod:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/stable'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: stable
+
+      - name: Deploy to Netlify
+        uses: South-Paw/action-netlify-deploy@v1.2.0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID_PROD }}
+          build-dir: "."
